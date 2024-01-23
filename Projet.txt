@@ -1,0 +1,12 @@
+2 processes différents --> 1 Game et N Player  
+
+Shared memory pour tous les processus --> Voir méthode + protéger les infos 
+
+Communication entre Game et Player --> sockets
+Communication entre Player --> Message queue
+End of game events --> signals
+
+
+
+
+
