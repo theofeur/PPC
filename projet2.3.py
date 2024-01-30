@@ -123,11 +123,9 @@ def game() :
         player_playing+=1
 
     if Victoire==False:
-        scores=0
-        for points in range (0,len(pile)):
-            for somme in range (pile[points],0,-1):
-                scores+=i  
-        print(f"Défaite! Mais vous avez quand même récolté {scores} points !")  
+        score_total=0
+        score_total = sum(sum(range(res, 0, -1)) for res in pile)
+        print(f"Défaite! Mais vous avez quand même récolté {score_total} points !") 
 
     if Victoire==True:
         print(f"Victoire! Vous avez récolté le nombre maximum de point, soit {nb_joueurs * 15}") 
